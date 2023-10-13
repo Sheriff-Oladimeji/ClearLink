@@ -40,13 +40,13 @@ const images: Image[] = [
 ];
 const Partner = () => {
   return (
-    <div className="w-[90%] mx-auto my-8">
+    <div className="container ">
       <p className="text-gray-600 text-center mb-6">
         Join 1,500+ companies already video conferencing the ClearLink way
       </p>
-      <Marquee className="h-[40px]" >
+      <Marquee className="mb-20" >
         {images.map(image => (
-          <Image src={image.image} key={image.id} alt="" className="mx-8 h-[40px]"/>
+          <Image src={image.image} key={image.id} alt="" className="mx-8 "/>
         ))}
       </Marquee>
     </div>

@@ -9,7 +9,7 @@ import star from "public/star.png";
 
 const Header = () => {
   return (
-    <header className="w-[90%] mx-auto flex flex-col md:flex-row items-center  justify-between  gap-8 mt-8">
+    <header className="container flex flex-col md:flex-row items-center  justify-between  gap-8 ">
       <main className="md:w-4/6 flex flex-col gap-8 text-center md:text-start">
         <h1 className="text-4xl md:text-5xl font-bold text-[#1D2939]">
           Uniting the world,
