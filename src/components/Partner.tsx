@@ -44,7 +44,7 @@ const Partner = () => {
       <p className="text-gray-600 text-center mb-6">
         Join 1,500+ companies already video conferencing the ClearLink way
       </p>
-      <Marquee className="mb-20" >
+      <Marquee className="mb-28" >
         {images.map(image => (
           <Image src={image.image} key={image.id} alt="" className="mx-8 "/>
         ))}

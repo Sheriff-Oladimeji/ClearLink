@@ -20,7 +20,7 @@ const Header = () => {
           Experience the future of communication with ClearLink – where
           crystal-clear video conferencing meets unparalleled simplicity.
         </p>
-        <div className="flex flex-col md:flex-row gap-6 items-center">
+        <div className="flex flex-col sm:flex-row gap-6 items-center">
           <Button
             value="Start your free trial"
             link=""
@@ -31,7 +31,7 @@ const Header = () => {
             Discover AI assistant
           </Link>
         </div>
-        <div className="flex items-center gap-3 ">
+        <div className="flex flex-col sm:flex-row items-center gap-3 ">
           <Image src={avatars} alt="avatars" />
           <div className="flex flex-col ">
             <div className="flex gap-1 items-center">

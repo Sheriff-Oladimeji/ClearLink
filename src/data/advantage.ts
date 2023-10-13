@@ -37,3 +37,5 @@ const advantages: Advantage[] = [
     desc: "Your privacy is our priority with bank-grade security protocols safeguarding your meetings and data from unwanted intruders.",
   },
 ];
+
+export default advantages
