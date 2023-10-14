@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
 import Partner from "@/components/Partner";
+import Testimonial from "@/components/Testimonial";
 
 import React from "react";
 
@@ -13,6 +14,7 @@ const page = () => {
       <Header />
       <Partner />
       <Advantage />
+      <Testimonial/>
       <Footer />
     </div>
   );
