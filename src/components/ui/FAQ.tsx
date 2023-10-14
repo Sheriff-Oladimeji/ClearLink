@@ -25,9 +25,13 @@ const FAQ = ({ question, answer }: Faq) => {
         <h2 className="text-lg font-semibold text-gay-900">{question}</h2>
         <button
           onClick={toggleFAQ}
-          className="transition-all ease-in-out duration-300"
+          className="transition-all ease-in-out duration-300 "
         >
-          {isOpen ? <Image src={minus} alt="" /> : <Image src={plus} alt="" />}
+          {isOpen ? (
+            <Image src={minus} alt="" className="w-8 h-8" />
+          ) : (
+            <Image src={plus} alt="" className="w-8 h-8" />
+          )}
         </button>
       </div>
       {isOpen && <p className="mt-2 text-gray-600">{answer}</p>}

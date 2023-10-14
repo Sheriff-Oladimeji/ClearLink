@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa"; // Import hamburger and close icons
+import {  FiMenu } from "react-icons/fi"; // Import hamburger and close icons
+import { CgClose } from "react-icons/cg"; // Import hamburger and close icons
 import Logo from "public/logo.svg";
 import Image from "next/image";
 import Button from "./ui/Button";
@@ -15,7 +16,7 @@ const Navbar = () => {
   return (
     <nav className="bg-gray-100 border border-gray-300 mt-12 container rounded-full relative">
       {/* Desktop Navigation */}
-      <div className="md:flex justify-between items-center w-[95%] mx-auto hidden py-2">
+      <div className="md:flex justify-between items-center w-[95%] mx-auto hidden py-2 flex-wrap">
         <div className="flex items-center gap-1">
           <Image src={Logo} alt="" />
           <p className="text-gray-900 font-semibold text-lg">ClearLink</p>
@@ -47,12 +48,12 @@ const Navbar = () => {
           <p className="text-gray-900 font-semibold text-lg">ClearLink</p>
         </div>
         {isMobileMenuOpen ? (
-          <FaTimes
+          <CgClose
             onClick={toggleMobileMenu}
             className="text-gray-700 text-2xl cursor-pointer transition-all duration-300 transform hover:scale-110"
           />
         ) : (
-          <FaBars
+          <FiMenu
             onClick={toggleMobileMenu}
             className="text-gray-700 text-2xl cursor-pointer transition-all duration-300 transform hover:scale-110"
           />
