@@ -31,10 +31,10 @@ const Testimonial = () => {
             {slides[currentSlide].testimony}
           </h1>
           <div className="flex gap-8 sm:justify-between sm:items-center flex-col sm:flex-row">
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-4">
               <Image src={slides[currentSlide].avatar} alt="" />
-              <div className="flex flex-col gap-1">
-                <h4 className="text-gray-900 font-semibold">{slides[currentSlide].name}</h4>
+              <div className="flex flex-col ">
+                <h4 className="text-gray-900 font-semibold text-lg">{slides[currentSlide].name}</h4>
                 <p className="text-gray-600">{slides[currentSlide].role}</p>
               </div>
             </div>
