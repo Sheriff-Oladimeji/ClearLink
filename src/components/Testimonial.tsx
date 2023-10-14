@@ -22,7 +22,7 @@ const Testimonial = () => {
     return () => clearInterval(interval);
   }, []);
   return (
-    <section className="bg-gray-50 mt-28">
+    <section className="bg-gray-50 my-28">
       <div className="flex flex-col md:flex-row justify-between items-center container py-8 gap-40">
         <main className="flex flex-col gap-8">
           <Image src={slides[currentSlide].image} alt="" />

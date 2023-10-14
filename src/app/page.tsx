@@ -1,6 +1,7 @@
+import About from "@/components/About";
 import Advantage from "@/components/Advantage";
 import CTA from "@/components/CTA";
-import FAQ from "@/components/FAQ";
+
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
@@ -17,8 +18,8 @@ const page = () => {
       <Partner />
       <Advantage />
       <Testimonial />
-      <FAQ />
-      <CTA/>
+      <About />
+      <CTA />
       <Footer />
     </div>
   );
