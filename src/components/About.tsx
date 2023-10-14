@@ -1,8 +1,14 @@
+"use client";
 import faqs from "@/data/faq";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import FAQ from "./ui/FAQ";
 
 const About = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
     <section className="container  flex flex-col md:flex-row gap-20 justify-between items-center">
       <div className="flex flex-col gap-4 md:w-3/6">
@@ -16,7 +22,7 @@ const About = () => {
           <span className="underline"> chat to our friendly team</span>.
         </p>
       </div>
-      <div className="md:w-4/6">
+      <div className="md:w-4/6" data-aos="fade-up">
         {faqs.map((faq) => (
           <FAQ key={faq.id} question={faq.que} answer={faq.ans} />
         ))}

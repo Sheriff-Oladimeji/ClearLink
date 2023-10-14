@@ -62,7 +62,7 @@ const Navbar = () => {
 
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-gray-100 px-4 py-2 absolute top-20 left-0 right-0 z-50 w-full rounded-md">
+        <div className="md:hidden bg-gray-100 px-6 py-8 absolute top-20 left-0 right-0 z-50 w-full rounded-md ">
           <ul className="text-gray-700  cursor-pointer">
             <li className="py-2">Products</li>
             <li className="py-2">Solutions</li>
