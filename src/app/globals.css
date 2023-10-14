@@ -5,3 +5,6 @@
 .container{
     @apply w-[90%] mx-auto my-8;
 }
+li{
+    @apply hover:font-bold;
+}

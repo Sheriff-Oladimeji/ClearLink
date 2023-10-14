@@ -21,7 +21,7 @@ const Navbar = () => {
           <Image src={Logo} alt="" />
           <p className="text-gray-900 font-semibold text-lg">ClearLink</p>
         </div>
-        <ul className="text-gray-500 flex gap-8 items-center">
+        <ul className="text-gray-500 flex gap-8 items-center  cursor-pointer">
           <li>Products</li>
           <li>Solutions</li>
           <li>Resources</li>
@@ -63,7 +63,7 @@ const Navbar = () => {
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
         <div className="md:hidden bg-gray-100 px-4 py-2 absolute top-20 left-0 right-0 z-50 w-full rounded-md">
-          <ul className="text-gray-700">
+          <ul className="text-gray-700  cursor-pointer">
             <li className="py-2">Products</li>
             <li className="py-2">Solutions</li>
             <li className="py-2">Resources</li>
