@@ -1,10 +1,17 @@
+"use client";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import advantages from "@/data/advantage";
 import Image from "next/image";
-import React from "react";
 import people from "public/people.png";
 import arrow from "public/arrow.png";
 
 const Advantage = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 }); // Initialize AOS
+  }, []);
+
   return (
     <section className="container ">
       <div className="flex flex-col gap-4">
@@ -20,9 +27,17 @@ const Advantage = () => {
       <div className="flex flex-col md:flex-row items-center justify-between gap-20 mt-16 md:mt-12">
         <main className="grid sm:grid-cols-2 gap-14 md:w-4/6 ">
           {advantages.map((advantage) => (
-            <div key={advantage.id} className="flex flex-col gap-4">
+            <div
+              key={advantage.id}
+              className="flex flex-col gap-4"
+              data-aos="fade-up"
+            >
               <div className=" bg-gray-50 border  border-gray-200 p-2 rounded-full w-10 h-10">
-                <Image src={advantage.img} alt={advantage.title}  className="z-50"/>
+                <Image
+                  src={advantage.img}
+                  alt={advantage.title}
+                  className="z-50"
+                />
               </div>
               <h3 className="text-xl font-bold text-gray-900">
                 {advantage.title}

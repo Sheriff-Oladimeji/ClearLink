@@ -2,7 +2,9 @@
 import Image from "next/image";
 import minus from "public/minus-circle.svg";
 import plus from "public/plus-circle.svg";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 interface Faq {
   question: string;
   answer: string;
@@ -13,6 +15,10 @@ const FAQ = ({ question, answer }: Faq) => {
   const toggleFAQ = () => {
     setIsOpen(!isOpen);
   };
+    useEffect(() => {
+      AOS.init({ duration: 1000 });
+    }, []);
+
   return (
     <section
       className={`faq ${
@@ -20,6 +26,7 @@ const FAQ = ({ question, answer }: Faq) => {
           ? "bg-gray-50 border border-gray-200 rounded-md"
           : "bg-white border-b  border-gray-200 "
       } transition-all ease-in-out duration-300 p-4 mb-2`}
+      data-aos="fade-up"
     >
       <div className="flex justify-between items-center">
         <h2 className="text-lg font-semibold text-gay-900">{question}</h2>
