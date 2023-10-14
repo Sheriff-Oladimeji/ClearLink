@@ -5,7 +5,7 @@ import screen from "public/screen.png"
 import Button from "./ui/Button";
 const CTA = () => {
   return (
-    <section className="flex  flex-col md:flex-row justify-between mx-0 overflow-x-hidden my-28">
+    <section className="flex  flex-col md:flex-row justify-between mx-0 overflow-x-hidden mt-28 mb-0">
       <div className="ml-[5%]">
         <h1 className="text-gray-900 text-2xl sm:text-3xl md:text-4xl font-semibold  mb-6">
           Ready to clear the path to perfect communication?

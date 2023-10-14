@@ -11,7 +11,7 @@ import youtube from "public/youtube.svg";
 import github from "public/github.svg";
 const Footer = () => {
   return (
-    <footer className=" text-gray-600 py-12">
+    <footer className=" text-gray-600 pt-12">
       <div className="w-[90%] mx-auto grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-12">
         <div className="sm:col-span-2 flex flex-col gap-4">
           <div className="flex items-center gap-1">
