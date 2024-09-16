@@ -65,8 +65,10 @@ const Footer = () => {
         </div>
         <div className="flex flex-col gap-6">
           <span className="font-semibold text-blue">Get the app</span>
-          <Image src={app} alt="" />
+        <div className="flex flex-row  gap-4 md:flex-col md:gap-6">
+            <Image src={app} alt="" />
           <Image src={play} alt="" />
+        </div>
         </div>
       </div>
       <aside className="bg-gray-50 mt-8">
